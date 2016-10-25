@@ -24,25 +24,25 @@ void setup()
 void loop()
 {
   //In1 drives Out1
-  if (digitalRead(In1))
+  if (digitalRead(In1) )
   {digitalWrite(Out1,HIGH);}
   else
   {digitalWrite(Out1,LOW);}
 
   //In2 drives Out2
-  if (digitalRead(In2) == 1)
+  if (digitalRead(In2) )
   {digitalWrite(Out2,HIGH);}
   else
   {digitalWrite(Out2,LOW);}
 
   //In3 drives Out3
-  if (digitalRead(In3) == 1)
+  if (digitalRead(In3) )
   {digitalWrite(Out3,HIGH);}
   else
   {digitalWrite(Out3,LOW);}
 
   //In4 drives Out4
-  if (digitalRead(In4) == 1)
+  if (digitalRead(In4) )
   {digitalWrite(Out4,HIGH);}
   else
   {digitalWrite(Out4,LOW);}
