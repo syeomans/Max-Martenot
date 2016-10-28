@@ -55,13 +55,13 @@ void loop()
   Serial.print(",");
   
   //Print inputs to console
-  Serial.print(digitalRead(In1), DEC ) );
+  Serial.print(digitalRead(In1), DEC );
   Serial.print(",");
-  Serial.print(digitalRead(In2), DEC ) );
+  Serial.print(digitalRead(In2), DEC );
   Serial.print(",");
-  Serial.print(digitalRead(In3), DEC ) );
+  Serial.print(digitalRead(In3), DEC );
   Serial.print(",");
-  Serial.print(digitalRead(In4), DEC ) );
+  Serial.print(digitalRead(In4), DEC );
   Serial.print(",");
   delay(50);
 }
