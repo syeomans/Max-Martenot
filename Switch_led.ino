@@ -19,6 +19,7 @@ void setup()
   pinMode(Out2,OUTPUT);
   pinMode(Out3,OUTPUT);
   pinMode(Out4,OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop()
@@ -46,4 +47,14 @@ void loop()
   {digitalWrite(Out4,HIGH);}
   else
   {digitalWrite(Out4,LOW);}
+  
+  //Print inputs to console
+  Serial.print(digitalRead(In1), DEC ) );
+  Serial.print(",");
+  Serial.print(digitalRead(In2), DEC ) );
+  Serial.print(",");
+  Serial.print(digitalRead(In3), DEC ) );
+  Serial.print(",");
+  Serial.print(digitalRead(In4), DEC ) );
+  Serial.print(",");
 }
