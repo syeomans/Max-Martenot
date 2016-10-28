@@ -57,11 +57,15 @@ void loop()
   //Print inputs to console
   Serial.print(digitalRead(In1), DEC );
   Serial.print(",");
+  Serial.println();
   Serial.print(digitalRead(In2), DEC );
   Serial.print(",");
+  Serial.println();
   Serial.print(digitalRead(In3), DEC );
   Serial.print(",");
+  Serial.println();
   Serial.print(digitalRead(In4), DEC );
   Serial.print(",");
+  Serial.println();
   delay(50);
 }
