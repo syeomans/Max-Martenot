@@ -19,6 +19,7 @@ void setup()
   pinMode(Out2,OUTPUT);
   pinMode(Out3,OUTPUT);
   pinMode(Out4,OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop()
@@ -46,4 +47,25 @@ void loop()
   {digitalWrite(Out4,HIGH);}
   else
   {digitalWrite(Out4,LOW);}
+  
+  // read the input on analog pin 0:
+  int sensorValue = analogRead(A0);
+  // print out the value you read:
+  Serial.println(sensorValue, DEC);
+  Serial.print(",");
+  
+  //Print inputs to console
+  Serial.print(digitalRead(In1), DEC );
+  Serial.print(",");
+  Serial.println();
+  Serial.print(digitalRead(In2), DEC );
+  Serial.print(",");
+  Serial.println();
+  Serial.print(digitalRead(In3), DEC );
+  Serial.print(",");
+  Serial.println();
+  Serial.print(digitalRead(In4), DEC );
+  Serial.print(",");
+  Serial.println();
+  delay(50);
 }
