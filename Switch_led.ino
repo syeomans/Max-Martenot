@@ -63,7 +63,7 @@ void loop()
     sensorValue += sensorValues[i];
   }
   sensorValue = sensorValue / 10;
-  // print out the value you read:
+  // print out the averaged value you read:
   Serial.println(sensorValue, DEC);
   Serial.print(",");
   
