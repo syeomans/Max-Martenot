@@ -67,7 +67,7 @@ void loop()
   Serial.println(sensorValue, DEC);
   Serial.print(",");
   
-  //Print inputs to console
+  // Print inputs to console
   Serial.print(digitalRead(In1), DEC );
   Serial.print(",");
   Serial.println();
